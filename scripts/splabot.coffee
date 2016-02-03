@@ -105,7 +105,7 @@ stageTalk = {
 }
 
 module.exports = (robot) ->
-    robot.hear /(ハイカラニュース)/i, (msg) ->
+    robot.hear /(ステージ情報)/i, (msg) ->
         resText =  ':aori: ごきげんイカがですか？ハイカラニュースの時間だよ！\n'
         resText += ':hotaru: こんちゃ〜、シオカラーズで〜す。\n'
         resText += ' \n'
