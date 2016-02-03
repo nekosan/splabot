@@ -1,6 +1,9 @@
 # Description:
 #   イカbot
 #
+#
+
+showImage = false
 
 stageImage = {
     'Bバスパーク': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2FB%A5%D0%A5%B9%A5%D1%A1%BC%A5%AF&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-B%A5%D0%A5%B9%A5%D1%A1%BC%A5%AF.jpg'
@@ -119,7 +122,8 @@ module.exports = (robot) ->
             resText += ' \n'
             msg.send resText
             for m in json_nawabari['maps']
-                resText =  stageImage[m] + '\n'
+                resText = ''
+                resText +=  stageImage[m] + '\n' if showImage
                 resText += '【' + m + '】\n'
                 resText += msg.random stageTalk[m]
                 resText += ' \n'
@@ -133,7 +137,8 @@ module.exports = (robot) ->
                 resText += ' \n'
                 msg.send resText
                 for m in json_gachi['maps']
-                    resText =  stageImage[m] + '\n'
+                    resText = ''
+                    resText +=  stageImage[m] + '\n' if showImage
                     resText +=  '【' + m + '】\n'
                     resText += msg.random stageTalk[m]
                     resText += ' \n'
