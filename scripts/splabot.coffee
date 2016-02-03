@@ -89,38 +89,38 @@ module.exports = (robot) ->
     robot.hear /(ハイカラニュース)/i, (msg) ->
         resText =  ':aori: ごきげんイカがですか？ハイカラニュースの時間だよ！\n'
         resText += ':hotaru: こんちゃ〜、シオカラーズで〜す。\n'
-        resText += '\n'
+        resText += ' \n'
         msg.send resText
 
         req_nawabari = msg.http('http://splapi.retrorocket.biz/regular/now').get()
         req_nawabari (err, res, body) ->
             json_nawabari = (JSON.parse body)['result'][0]
-            resText =  ':aori: 現在の*レギュラーマッチ*のステージはコチラ！\n'
+            resText =  ':aori: 現在のレギュラーマッチのステージはコチラ！\n'
             resText += ':hotaru: じゃらじゃらじゃらじゃら〜...ばん！\n'
-            resText += '\n'
+            resText += ' \n'
             msg.send resText
             for m in json_nawabari['maps']
                 resText =  '【' + m + '】\n'
                 resText += msg.random stageTalk[m]
-                resText += '\n'
+                resText += ' \n'
                 msg.send resText
 
             req_gachi = msg.http('http://splapi.retrorocket.biz/gachi/now').get()
             req_gachi (err, res, body) ->
                 json_gachi= (JSON.parse body)['result'][0]
-                resText =  ':aori: 現在の*ガチマッチ*のステージはコチラ！\n'
+                resText =  ':aori: 現在のガチマッチのステージはコチラ！\n'
                 resText += ':hotaru: じゃらじゃらじゃらじゃら〜...ばん！\n'
-                resText += '\n'
+                resText += ' \n'
                 msg.send resText
                 for m in json_gachi['maps']
                     resText =  '【' + m + '】\n'
                     resText += msg.random stageTalk[m]
-                    resText += '\n'
+                    resText += ' \n'
                     msg.send resText
 
                 resText =  ':aori: じゃ、今日も元気にいってみよー！\n'
                 resText +=  ':aori: イカよろしくーーー！\n'
                 resText += ':hotaru: イカよろしく〜〜〜\n'
-                resText += '\n'
+                resText += ' \n'
                 msg.send resText
 
