@@ -2,6 +2,25 @@
 #   イカbot
 #
 
+stageImage = {
+    'Bバスパーク': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2FB%A5%D0%A5%B9%A5%D1%A1%BC%A5%AF&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-B%A5%D0%A5%B9%A5%D1%A1%BC%A5%AF.jpg'
+    'デカライン高架下': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%C7%A5%AB%A5%E9%A5%A4%A5%F3%B9%E2%B2%CD%B2%BC&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%C7%A5%AB%A5%E9%A5%A4%A5%F3%B9%E2%B2%CD%B2%BC.jpg'
+    'シオノメ油田': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%B7%A5%AA%A5%CE%A5%E1%CC%FD%C5%C4&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%B7%A5%AA%A5%CE%A5%E1%CC%FD%C5%C4.jpg'
+    'ハコフグ倉庫': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%CF%A5%B3%A5%D5%A5%B0%C1%D2%B8%CB&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%CF%A5%B3%A5%D5%A5%B0%C1%D2%B8%CB.png'
+    'アロワナモール': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%A2%A5%ED%A5%EF%A5%CA%A5%E2%A1%BC%A5%EB&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%A2%A5%ED%A5%EF%A5%CA%A5%E2%A1%BC%A5%EB.jpg'
+    'ホッケふ頭': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%DB%A5%C3%A5%B1%A4%D5%C6%AC&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%DB%A5%C3%A5%B1%A4%D5%C6%AC.jpg'
+    'モズク農園': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%E2%A5%BA%A5%AF%C7%C0%B1%E0&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%E2%A5%BA%A5%AF%C7%C0%B1%E0.png'
+    'ネギトロ炭鉱': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%CD%A5%AE%A5%C8%A5%ED%C3%BA%B9%DB&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%CD%A5%AE%A5%C8%A5%ED%C3%BA%B9%DB.jpg'
+    'タチウオパーキング': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%BF%A5%C1%A5%A6%A5%AA%A5%D1%A1%BC%A5%AD%A5%F3%A5%B0&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%BF%A5%C1%A5%A6%A5%AA%A5%D1%A1%BC%A5%AD%A5%F3%A5%B0.jpg'
+    'モンガラキャンプ場': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%E2%A5%F3%A5%AC%A5%E9%A5%AD%A5%E3%A5%F3%A5%D7%BE%EC&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%E2%A5%F3%A5%AC%A5%E9%A5%AD%A5%E3%A5%F3%A5%D7%BE%EC.jpg'
+    'ヒラメが丘団地': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%D2%A5%E9%A5%E1%A4%AC%B5%D6%C3%C4%C3%CF&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%D2%A5%E9%A5%E1%A4%AC%B5%D6%C3%C4%C3%CF.jpg'
+    'マザバ海峡大橋': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%DE%A5%B5%A5%D0%B3%A4%B6%AE%C2%E7%B6%B6&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%DE%A5%B5%A5%D0%B3%A4%B6%AE%C2%E7%B6%B6.jpg'
+    'キンメダイ美術館': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%AD%A5%F3%A5%E1%A5%C0%A5%A4%C8%FE%BD%D1%B4%DB&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%AD%A5%F3%A5%E1%A5%C0%A5%A4%C7%EE%CA%AA%B4%DB.jpg'
+    'マヒマヒリゾート&スパ': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%DE%A5%D2%A5%DE%A5%D2%A5%EA%A5%BE%A1%BC%A5%C8%A1%F5%A5%B9%A5%D1&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%DE%A5%D2%A5%DE%A5%D2%A5%EA%A5%BE%A1%BC%A5%C8%A1%F5%A5%B9%A5%D1.jpg'
+    'ショッツル鉱山': 'http://wikiwiki.jp/splatoon2ch/?plugin=attach&refer=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%B7%A5%E7%A5%C3%A5%C4%A5%EB%B9%DB%BB%B3&openfile=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%B7%A5%E7%A5%C3%A5%C4%A5%EB%B9%DB%BB%B3.jpg'
+    'アンチョビットゲームズ': 'http://wikiwiki.jp/splatoon2ch/?plugin=ref&page=%A5%B9%A5%C6%A1%BC%A5%B8%2F%A5%A2%A5%F3%A5%C1%A5%E7%A5%D3%A5%C3%A5%C8%A5%B2%A1%BC%A5%E0%A5%BA&src=%A5%B9%A5%C6%A1%BC%A5%B8-%A5%A2%A5%F3%A5%C1%A5%E7%A5%D3%A5%C3%A5%C8%A5%B2%A1%BC%A5%E0%A5%BA.jpg'
+}
+
 stageTalk = {
     'Bバスパーク': [
         ':aori: スケボーは苦手...骨折とかしそう...\n:hotaru: 骨、無いじゃん...\n'
@@ -100,7 +119,8 @@ module.exports = (robot) ->
             resText += ' \n'
             msg.send resText
             for m in json_nawabari['maps']
-                resText =  '【' + m + '】\n'
+                resText =  stageImage[m] + '\n'
+                resText += '【' + m + '】\n'
                 resText += msg.random stageTalk[m]
                 resText += ' \n'
                 msg.send resText
@@ -113,7 +133,8 @@ module.exports = (robot) ->
                 resText += ' \n'
                 msg.send resText
                 for m in json_gachi['maps']
-                    resText =  '【' + m + '】\n'
+                    resText =  stageImage[m] + '\n'
+                    resText +=  '【' + m + '】\n'
                     resText += msg.random stageTalk[m]
                     resText += ' \n'
                     msg.send resText
